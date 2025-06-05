@@ -3,181 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <script>
-// 1. Change document background color to silver
-document.body.style.backgroundColor = "silver";
-
-// 2. Change the font color for h1 title tag to green
-document.getElementById("title").style.color = "green";
-
-// 3. Change the font case for h3 title tags to uppercase
-let h3Tags = document.getElementsByTagName("h3");
-for(let i = 0; i < h3Tags.length; i++) {
-    h3Tags[i].style.textTransform = "uppercase";
-}
-
-// 4. Add one more fruit to the fruits list
-let fruitList = document.getElementById("fruList");
-let newFruit = document.createElement("li");
-newFruit.textContent = "Oranges";
-fruitList.appendChild(newFruit);
-
-// 5. Add one more vegetable to the vegetables list
-let vegList = document.getElementById("vegList");
-let newVeg = document.createElement("li");
-newVeg.textContent = "Spinach";
-vegList.appendChild(newVeg);
-</script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>Greens Kiosk</title>
-</head>
-<body>
-<h1 id="title">Welcome to Greens Kiosk</h1>
-<p>We sell fruits and vegetables</p>
-<h3>Fruits</h3>
-<ul id="fruList">
-<li>Mangoes</li>
-<li>Bananas</li>
-<li>Water Melons</li>
-</ul>
-<h3>Vegetables</h3>
-<ul id="vegList">
-<li>Onions</li>
-<li>Tomatoes</li>
-<li>Kales</li>
-</ul>
-
-<script>
-// 1. Change document background color to silver
-document.body.style.backgroundColor = "silver";
-
-// 2. Change the font color for h1 title tag to green
-document.getElementById("title").style.color = "green";
-
-// 3. Change the font case for h3 title tags to uppercase
-let h3Tags = document.getElementsByTagName("h3");
-for(let i = 0; i < h3Tags.length; i++) {
-    h3Tags[i].style.textTransform = "uppercase";
-}
-
-// 4. Add one more fruit to the fruits list
-let fruitList = document.getElementById("fruList");
-let newFruit = document.createElement("li");
-newFruit.textContent = "Oranges";
-fruitList.appendChild(newFruit);
-
-// 5. Add one more vegetable to the vegetables list
-let vegList = document.getElementById("vegList");
-let newVeg = document.createElement("li");
-newVeg.textContent = "Spinach";
-vegList.appendChild(newVeg);
-</script>
-</body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE HTML>
-<html>
-<head>
     <title>Greens Kiosk</title>
-    <style>
-        body {
-            background-color: silver;
-        }
-        #title {
-            color: green;
-        }
-        h3 {
-            text-transform: uppercase;
-        }
-        .fruit-img, .veg-img {
-            width: 40px;
-            height: 40px;
-            object-fit: cover;
-            vertical-align: middle;
-            margin-left: 10px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-    </style>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1 id="title">Welcome to Greens Kiosk</h1>
+    
+    <h2 id="subtitle">Freshness you can taste, health you can trust!</h2>
     <p>We sell fruits and vegetables</p>
     <h3>Fruits</h3>
     <ul id="fruList">
         <li>
             Mangoes
-            <img src="images/mango.jpg" alt="Mangoes" class="fruit-img">
+            <img src="images/mango.jpeg" alt="Mangoes" class="fruit-img">
         </li>
         <li>
             Bananas
-            <img src="images/banana.jpg" alt="Bananas" class="fruit-img">
+            <img src="images/banana.jpeg" alt="Bananas" class="fruit-img">
         </li>
         <li>
             Water Melons
-            <img src="images/watermelon.jpg" alt="Water Melons" class="fruit-img">
+            <img src="images/watermelon.jpeg" alt="Water Melons" class="fruit-img">
         </li>
         <li>
             Apples
-            <img src="images/apple.jpg" alt="Apples" class="fruit-img">
+            <img src="images/apple.jpeg" alt="Apples" class="fruit-img">
+        </li>
+        
+        <li class="exciting">
+            Oranges
+            <img src="images/orange.jpeg" alt="Oranges" class="fruit-img">
         </li>
     </ul>
     <h3>Vegetables</h3>
     <ul id="vegList">
         <li>
             Onions
-            <img src="images/onion.jpg" alt="Onions" class="veg-img">
+            <img src="images/onion.jpeg" alt="Onions" class="veg-img">
         </li>
         <li>
             Tomatoes
-            <img src="images/tomato.jpg" alt="Tomatoes" class="veg-img">
+            <img src="images/tomato.jpeg" alt="Tomatoes" class="veg-img">
         </li>
         <li>
             Kales
-            <img src="images/kales.jpg" alt="Kales" class="veg-img">
+            <img src="images/kales.jpeg" alt="Kales" class="veg-img">
         </li>
         <li>
             Carrots
-            <img src="images/carrots.jpg" alt="Carrots" class="veg-img">
+            <img src="images/carrots.jpeg" alt="Carrots" class="veg-img">
+        </li>
+        
+        <li class="exciting">
+            Spinach
+            <img src="images/spinach.jpeg" alt="Spinach" class="veg-img">
         </li>
     </ul>
+    
+    <button id="orderBtn">Order Now!</button>
+    <div id="funFact"></div>
+    <script src="index.js"></script>
 </body>
 </html>

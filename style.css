@@ -1,0 +1,74 @@
+body {
+    background-color: silver;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+#title {
+    color: green;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+#subtitle {
+    color: #256d1b;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+h3 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    color: #444;
+}
+.fruit-img, .veg-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+    font-size: 38px;
+}
+
+li.exciting {
+    background: linear-gradient(90deg, #f3ffbd 10%, #b5fffc 90%);
+    font-weight: bold;
+    animation: pop 1s alternate infinite;
+    border-radius: 6px;
+    padding: 6px;
+}
+@keyframes pop {
+    0% { transform: scale(1);}
+    100% { transform: scale(1.05);}
+}
+
+#orderBtn {
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #fff;
+    font-size: 40px;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 32px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 8px #0002;
+}
+#orderBtn:hover {
+    transform: scale(1.08) rotate(-2deg);
+    background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+}
+#funFact {
+    margin-top: 20px;
+    font-size: 38px;
+    color: #0a4d1e;
+    font-weight: 500;
+    min-height: 30px;
+    transition: color 0.3s;
+}
